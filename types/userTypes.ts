@@ -34,3 +34,29 @@ export type GitDevProfileType = {
   documentation_url: string;
   message: string;
 };
+
+export type SearchUserNameProps = {
+  value: string;
+  onSubmit: React.FormEventHandler<HTMLFormElement>;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+};
+
+
+export type DevProfileIntroSectionProps = {
+  avatar: string;
+  username: string;
+  joinedAt: string;
+  profileUrl: string;
+};
+
+
+export type DevProfileMainSectionProps = {
+  bio: string;
+  publicRepos: number;
+  followers: number;
+  following: number;
+  location: string;
+  blog: string;
+  twitter: string | null;
+  company: string | null;
+};
